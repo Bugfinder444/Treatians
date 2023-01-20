@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-19T17:40:17 IST" name="Default suite" finished-at="2023-01-19T17:40:51 IST" duration-ms="33890">
+    <groups>
+    </groups>
+    <test started-at="2023-01-19T17:40:17 IST" name="Default test" finished-at="2023-01-19T17:40:51 IST" duration-ms="33890">
+      <class name="tests.TestNgClass">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TestNgClass@7fb95505]" started-at="2023-01-19T17:40:17 IST" name="setup" finished-at="2023-01-19T17:40:27 IST" duration-ms="9888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="BookAppointment()[pri:0, instance:tests.TestNgClass@7fb95505]" started-at="2023-01-19T17:40:27 IST" name="BookAppointment" finished-at="2023-01-19T17:40:51 IST" duration-ms="23867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookAppointment -->
+      </class> <!-- tests.TestNgClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
