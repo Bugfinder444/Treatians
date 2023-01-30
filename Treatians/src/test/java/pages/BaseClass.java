@@ -24,24 +24,15 @@ public class BaseClass {
 			
 			
 			DesiredCapabilities caps= new DesiredCapabilities();
-			
 			caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
-			
-			caps.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
-			
-			caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.0");
-			
+			caps.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");	
+			caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
 			caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
-			
 			caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-			
-			//caps.setCapability("appium:connectHardwareKeyboard", true);
-			//caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,60);
-			
 			caps.setCapability("appPackage", "com.treatians");
 			caps.setCapability("appActivity", "com.treatians.MainActivity");
 			
-			//caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Fleek\\Downloads\\app-dev-jan-17.apk");
+			//caps.setCapability(MobileCapabilityType.APP, "C:\\apks\\app-dev-jan-17.apk");
 			
 			URL url=new URL("http://127.0.0.1:4723/wd/hub");
 			

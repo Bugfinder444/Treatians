@@ -5,8 +5,8 @@
     <classes>
       <class name="tests.TestNgClass">
         <methods>
+          <include name="MultipleLogin"/>
           <include name="setup"/>
-          <include name="BookAppointment"/>
         </methods>
       </class> <!-- tests.TestNgClass -->
     </classes>

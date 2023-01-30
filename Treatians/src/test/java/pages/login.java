@@ -50,15 +50,15 @@ public WebElement logout;
 
 
 
-public void logIn() {
+public void logIn(String email ,String password) {
 	
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	threebar.click();
 	clickLoginButton.click();
 	emailTextFeild.click();
-	emailTextFeild.sendKeys("simbasingh@gmail.com");
+	emailTextFeild.sendKeys(email);
 	passwordTextFeild.click();
-	passwordTextFeild.sendKeys("123456789");
+	passwordTextFeild.sendKeys(password);
 	signinButton.click();
 	}
 public void logout() {
@@ -67,4 +67,7 @@ public void logout() {
 	logout.click();
 	
 	}
+public void Add(String readCell, String readCell2) {
+	
+}
 }

@@ -37,7 +37,10 @@ public WebElement passwordTextFeild;
 @AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.widget.ListView/android.view.View[6]/android.view.View/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.EditText")
 public WebElement confirmPasswordTextFeild;
 
-@AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.widget.ListView/android.view.View[4]/android.view.View/android.view.View[1]/android.view.View/android.widget.Spinner/android.view.View[1]")
+@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.widget.ListView/android.view.View[4]/android.view.View/android.view.View[2]")
+public WebElement SelectCountry;
+
+@AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.widget.ListView/android.view.View[7]/android.view.View/android.view.View[1]/android.view.View/android.widget.Spinner")
 public WebElement SelectCountryDropDown;
 
 @AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.app.Dialog/android.view.View/android.view.View[1]/android.widget.Button[2]")
@@ -49,16 +52,21 @@ public WebElement SelectCityDropDown;
 @AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.app.Dialog/android.view.View/android.view.View[1]/android.widget.Button[12]")
 public WebElement noida;
 
-@AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.widget.ListView/android.view.View[6]/android.view.View/android.view.View[1]/android.view.View/android.view.View[2]/android.widget.EditText")
+@AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.widget.ListView/android.view.View[9]/android.view.View/android.view.View[2]")
+public WebElement AddressTextFeildClick;
+
+@AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.widget.ListView/android.view.View[6]/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.widget.EditText")
 public WebElement AddressTextFeild;
 
 @AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View/android.widget.ListView/android.view.View[7]/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.widget.Button")
 public WebElement RegisterButton;
 
-@AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View/android.widget.Button")
+@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View/android.widget.Button")
 public WebElement BackArrow;
 
-public void signup() throws InterruptedException{
+public void signup(String email, String password) throws InterruptedException{
+	
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	
 	HomePage hp = new HomePage(driver);
 	hp.openLogin();
@@ -69,41 +77,39 @@ public void signup() throws InterruptedException{
 	lastNameTextFeild.click();
 	lastNameTextFeild.sendKeys("Test1");
 	emailTextFeild.click();
-	emailTextFeild.sendKeys("appiumtest1@gmail.com");
+	emailTextFeild.sendKeys(email);
 	phoneTextFeild.click();
-	phoneTextFeild.sendKeys("1111111111");
+	phoneTextFeild.sendKeys(password);
 	passwordTextFeild.click();
 	passwordTextFeild.sendKeys("123456789");
 	confirmPasswordTextFeild.click();
 	confirmPasswordTextFeild.sendKeys("123456789");
 	
+	
 	PointerInput finger1 = new PointerInput(PointerInput.Kind.TOUCH, "finger1");
 	Sequence scrolla = new Sequence(finger1, 1);
 	scrolla.addAction(finger1.createPointerMove(Duration.ofMillis(0),
-	PointerInput.Origin.viewport(), 476, 1424));
+	PointerInput.Origin.viewport(), 476, 1058));
 	scrolla.addAction(finger1.createPointerDown(0));
 	scrolla.addAction(finger1.createPointerMove(Duration.ofMillis(100),
-	PointerInput.Origin.viewport(),476, 123));
+	PointerInput.Origin.viewport(),476, 130));
 	scrolla.addAction(finger1.createPointerUp(0));
 	driver.perform(Arrays.asList(scrolla));
 	
-	Thread.sleep(2000);
+	
+	SelectCountry.click();
 	SelectCountryDropDown.click();
+	Thread.sleep(2000);
 	india.click();
-	Thread.sleep(3000);
 	SelectCityDropDown.click();
 	Thread.sleep(2000);
 	noida.click();
-	AddressTextFeild.click();
 	Thread.sleep(1000);
+	AddressTextFeildClick.click();
+	AddressTextFeild.click();
 	AddressTextFeild.sendKeys("Fleek IT Solutions");
 	RegisterButton.click();
 	
 	
 }
-/*
-@AndroidFindBy(xpath= "")
-public WebElement ;*/
-
-
 }
