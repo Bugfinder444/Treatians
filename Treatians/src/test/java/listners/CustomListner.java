@@ -1,10 +1,8 @@
 package listners;
 
 import java.io.IOException;
-
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import pages.BaseClass;
 
 public class CustomListner extends BaseClass implements ITestListener {

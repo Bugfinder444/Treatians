@@ -32,15 +32,12 @@ public class ExcelSheetDriver {
 	}
 	
 	public int RowCount()
-	{
-		
+	{	
 		return wrksheet.getRows();
-		
 	}
 	 
 	public static String ReadCell(int column,int row)
 	{
-		
 		return wrksheet.getCell(column,row).getContents();
 	}
  
@@ -48,7 +45,6 @@ public class ExcelSheetDriver {
 		
 		for(int col=0; col < wrksheet.getColumns(); col++)
 		{
-			
 			dict.put(ReadCell(col, 0), col);
 		}
 	}

@@ -2,14 +2,9 @@ package tests;
 
 import java.io.IOException;
 import java.time.Duration;
-
-import org.apache.poi.hpsf.HPSFException;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import dataBase.ExcelSheetDriver;
-import io.appium.java_client.android.AndroidDriver;
-import io.qameta.allure.Allure;
 import jxl.read.biff.BiffException;
 import listners.CustomListner;
 import pages.BaseClass;
@@ -27,14 +22,12 @@ public class TestNgClass extends BaseClass{
 public void install_app(){
 	
 	Installation obj = new Installation(driver);
-	obj.install();
-	
+	obj.install();	
 	}
 @Test
 public void LoginApp() throws BiffException, IOException{
 
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));		
 	login lo=new login(driver);
 	ExcelSheetDriver excel = new ExcelSheetDriver("C:\\data\\datafile1.xls");
 	lo.logIn(ExcelSheetDriver.ReadCell(excel.GetCell("email"),1), ExcelSheetDriver.ReadCell(excel.GetCell("password"), 1));
@@ -75,8 +68,7 @@ public void Booking2DrAtSameTimeslot() {
 	ba.Book_Appointment();
 	ba.threebar2.click();
 	ba.Home.click();
-	ba.Book_Appointment2();
-	
+	ba.Book_Appointment2();	
 }
 @Test
 public void MultipleLogin() throws BiffException, IOException, InterruptedException {
@@ -84,6 +76,7 @@ public void MultipleLogin() throws BiffException, IOException, InterruptedExcept
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	ExcelSheetDriver excel = new ExcelSheetDriver("C:\\data\\datafile1.xls");
 	int j=excel.RowCount();
+	
 	for(int i=1; i<=j; i++)
 	{	
 		Thread.sleep(2000);
@@ -95,5 +88,26 @@ public void MultipleLogin() throws BiffException, IOException, InterruptedExcept
 		lo.logout.click();
 	}
 }
+@Test
+public void LoginSuccessful() throws BiffException, IOException, InterruptedException {
 
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	login lo=new login(driver);
+	ExcelSheetDriver excel = new ExcelSheetDriver("C:\\data\\datafile1.xls");
+	int j=excel.RowCount();
+	for(int i=1; i<=j; i++) {
+		
+	lo.logIn(ExcelSheetDriver.ReadCell(excel.GetCell("email"),i), ExcelSheetDriver.ReadCell(excel.GetCell("password"), i));
+	lo.threebar.click();
+	if(lo.logout.isDisplayed())	{
+		System.out.println("Login Successfull");
+	}
+	else{
+		System.out.println("Login Unsuccesfull");
+	}
+	Thread.sleep(2000);
+	lo.logout.click();
+}
+
+}
 }

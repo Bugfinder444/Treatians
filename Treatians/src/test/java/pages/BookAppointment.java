@@ -38,6 +38,7 @@ public class BookAppointment extends HomePage {
 		BookAppointmentButtonFinal.click();	
 	}
 	public void Book_Appointment2() {
+		
 		Doctor2.click();
 		BookAppointmentButtonInitial.click();
 		date.click();

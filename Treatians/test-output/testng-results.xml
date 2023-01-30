@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="7" passed="0" failed="1" skipped="0">
+<testng-results ignored="7" total="8" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-27T18:12:12 IST" name="Default suite" finished-at="2023-01-27T18:12:57 IST" duration-ms="45132">
+  <suite started-at="2023-01-30T16:31:26 IST" name="Default suite" finished-at="2023-01-30T16:32:28 IST" duration-ms="61439">
     <groups>
     </groups>
-    <test started-at="2023-01-27T18:12:12 IST" name="Default test" finished-at="2023-01-27T18:12:57 IST" duration-ms="45132">
+    <test started-at="2023-01-30T16:31:26 IST" name="Default test" finished-at="2023-01-30T16:32:28 IST" duration-ms="61439">
       <class name="tests.TestNgClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TestNgClass@2f62ea70]" started-at="2023-01-27T18:12:12 IST" name="setup" finished-at="2023-01-27T18:12:23 IST" duration-ms="11002" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TestNgClass@1b84f475]" started-at="2023-01-30T16:31:26 IST" name="setup" finished-at="2023-01-30T16:31:41 IST" duration-ms="14564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="MultipleLogin()[pri:0, instance:tests.TestNgClass@2f62ea70]" started-at="2023-01-27T18:12:23 IST" name="MultipleLogin" finished-at="2023-01-27T18:12:56 IST" duration-ms="33114" status="FAIL">
+        <test-method signature="LoginSuccessful()[pri:0, instance:tests.TestNgClass@1b84f475]" started-at="2023-01-30T16:31:41 IST" name="LoginSuccessful" finished-at="2023-01-30T16:32:27 IST" duration-ms="45896" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View/android.widget.Button})]]>
@@ -21,8 +21,7 @@
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:125)
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 at org.openqa.selenium.remote.RemoteWebElement$$EnhancerByCGLIB$$d27c0df4.click(<generated>)
-at pages.login.logIn(login.java:56)
-at tests.TestNgClass.MultipleLogin(TestNgClass.java:86)
+at tests.TestNgClass.LoginSuccessful(TestNgClass.java:101)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,12 +50,12 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6baf25d7 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@9dada78 (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:98)
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:118)
-... 32 more
+... 31 more
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View/android.widget.Button})
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.0', revision: '267030adea'
@@ -76,13 +75,13 @@ at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$0(A
 at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:171)
 at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:164)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 34 more
+... 33 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MultipleLogin -->
+        </test-method> <!-- LoginSuccessful -->
       </class> <!-- tests.TestNgClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -15,6 +15,7 @@ public login(AndroidDriver driver) {
 		
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);	
 	}
+
 @AndroidFindBy(xpath= "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View/android.view.View/android.widget.Button")
 public WebElement threebar;
 
@@ -65,9 +66,9 @@ public void logout() {
 	
 	threebar.click();
 	logout.click();
-	
 	}
 public void Add(String readCell, String readCell2) {
 	
 }
+
 }
